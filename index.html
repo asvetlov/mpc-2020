@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Многопоточность и async: разный код, похожие проблемы</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -25,8 +25,32 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+          Обо мне
+          <div>
+            Footer: имя, хендл, ссылку, номер слайда.
+          </div>
+        </section>
+        <section>
+          <section>
+            <h1>Как развивается кода</h1>
+          </section>
+          <section>
+            <div>Простой код: один процесс, один поток</div>
+            <img>путь выполнения запроса в Djanog</img>
+          </section>
+          <section>
+            <div>Проблема: одновременые запросы</div>
+          </section>
+          <section>
+            <div>Паралельный код: разножамеся процессами</div>
+            <img>Потоки</img>
+          </section>
+          <section>
+            <div>Проблема: ожидания и бутылочные горлышки</div>
+            <img>Все потоки ждут сетку</img>
+          </section>
+        </section>
 			</div>
 		</div>
 
