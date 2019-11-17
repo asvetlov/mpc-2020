@@ -271,3 +271,21 @@ body {
 @media print {
   .backgrounds {
     background-color: #fff; } }
+
+.reveal .slides {
+  margin: 0;
+  text-align: left; }
+
+.reveal .slides > section, .reveal .slides > section > section {
+  padding: 0;
+  display: flex !important;
+  flex-direction: column;
+  height: 100%; }
+
+.content {
+  flex-grow: 1;
+  margin: 0.5em; }
+
+.footer {
+  flex-grow: 0;
+  margin-left: 0.5em; }

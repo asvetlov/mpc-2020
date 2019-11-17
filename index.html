@@ -20,35 +20,75 @@
 			link.type = 'text/css';
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+    </script>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>
-          Обо мне
-          <div>
+          <div class="content">
+            <h4>Обо мне</h4>
+            <ul>
+              <li>foo</li>
+              <li>bar</li>
+            </ul>
+          </div>
+          <div class="footer">
             Footer: имя, хендл, ссылку, номер слайда.
           </div>
         </section>
         <section>
+
           <section>
-            <h1>Как развивается кода</h1>
+            <div class="content">
+              <h4>Как развивается код</h4>
+            </div>
+            <div class="footer">
+              Footer: имя, хендл, ссылку, номер слайда.
+            </div>
           </section>
+
           <section>
-            <div>Простой код: один процесс, один поток</div>
-            <img>путь выполнения запроса в Djanog</img>
+            <div class="content">
+              <h4>Как развивается код</h4>
+              <div>Простой код: один процесс, один поток</div>
+              <img>путь выполнения запроса в Djanog</img>
+            </div>
+            <div class="footer">
+              Footer: имя, хендл, ссылку, номер слайда.
+            </div>
           </section>
+
           <section>
-            <div>Проблема: одновременые запросы</div>
+            <div class="content">
+              <h4>Как развивается код</h4>
+              <div>Проблема: одновременые запросы</div>
+            </div>
+            <div class="footer">
+              Footer: имя, хендл, ссылку, номер слайда.
+            </div>
           </section>
+
           <section>
-            <div>Паралельный код: разножамеся процессами</div>
-            <img>Потоки</img>
+            <div class="content">
+              <h4>Как развивается код</h4>
+              <div>Паралельный код: разножамеся процессами</div>
+              <img>Процессы</img>
+            </div>
+            <div class="footer">
+              Footer: имя, хендл, ссылку, номер слайда.
+            </div>
           </section>
+
           <section>
-            <div>Проблема: ожидания и бутылочные горлышки</div>
-            <img>Все потоки ждут сетку</img>
+            <div class="content">
+              <h4>Как развивается код</h4>
+              <div>Проблема: ожидания и бутылочные горлышки</div>
+              <img>Все потоки ждут сетку</img>
+            </div>
+            <div class="footer">
+              Footer: имя, хендл, ссылку, номер слайда.
+            </div>
           </section>
         </section>
 			</div>

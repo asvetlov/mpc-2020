@@ -43,7 +43,28 @@ section.has-dark-background {
 	}
 }
 
-
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.reveal .slides {
+  margin: 0; // Allow section to take 100% vertical space.
+  text-align: left; // Disable default unnatural text-align to center.
+}
+
+.reveal .slides > section, .reveal .slides > section > section {
+  padding: 0; // Set within content/footer.
+  display: flex !important; // Inlined to "block" by Reveal.js JavaScript.
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex-grow: 1;
+  margin: 0.5em;
+}
+
+.footer {
+  flex-grow: 0;
+  margin-left: 0.5em;
+}
