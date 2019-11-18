@@ -68,3 +68,12 @@ section.has-dark-background {
   flex-grow: 0;
   margin-left: 0.5em;
 }
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  text-transform: none;
+}

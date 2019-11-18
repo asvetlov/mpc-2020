@@ -28,13 +28,10 @@
 				<section>
           <div class="content">
             <h4>Обо мне</h4>
-            <ul>
-              <li>foo</li>
-              <li>bar</li>
-            </ul>
+            <div>Обо мне</div>
           </div>
           <div class="footer">
-            Footer: имя, хендл, ссылку, номер слайда.
+            footer
           </div>
         </section>
         <section>
@@ -44,7 +41,7 @@
               <h4>Как развивается код</h4>
             </div>
             <div class="footer">
-              Footer: имя, хендл, ссылку, номер слайда.
+              footer
             </div>
           </section>
 
@@ -55,7 +52,7 @@
               <img>путь выполнения запроса в Djanog</img>
             </div>
             <div class="footer">
-              Footer: имя, хендл, ссылку, номер слайда.
+              footer
             </div>
           </section>
 
@@ -65,7 +62,7 @@
               <div>Проблема: одновременые запросы</div>
             </div>
             <div class="footer">
-              Footer: имя, хендл, ссылку, номер слайда.
+              footer
             </div>
           </section>
 
@@ -76,7 +73,7 @@
               <img>Процессы</img>
             </div>
             <div class="footer">
-              Footer: имя, хендл, ссылку, номер слайда.
+              footer
             </div>
           </section>
 
@@ -87,9 +84,101 @@
               <img>Все потоки ждут сетку</img>
             </div>
             <div class="footer">
-              Footer: имя, хендл, ссылку, номер слайда.
+              footer
             </div>
           </section>
+
+          <section>
+            <div class="content">
+              <h4>Как развивается код</h4>
+              <ul>
+                <li>Асинхронный код</li>
+                <li class="fragment">Термин "корутина" неоднозначный</li>
+                <li class="fragment">"Лучшее из двух миров"</li>
+              </ul>
+            </div>
+            <div class="footer">
+              footer
+            </div>
+          </section>
+
+        </section>
+        <section>
+
+          <section>
+            <div class="content">
+              <h1 style="text-align: center">Но проблемы остались!</h1>
+            </div>
+            <div class="footer">
+              footer
+            </div>
+          </section>
+
+          <section>
+            <div class="content">
+              <h4>Например, "fire-and-forget"</h4>
+              <pre><code>
+                # Пример с "утечкой корутин", рекурсивный fetch
+              </code></pre>
+            </div>
+            <div class="footer">
+              footer
+            </div>
+          </section>
+
+          <section>
+            <div class="content">
+              <h4>Например, "fire-and-forget"</h4>
+              <pre><code>
+                # Явно интересоваться ошибками
+              </code></pre>
+            </div>
+            <div class="footer">
+              footer
+            </div>
+          </section>
+
+          <section>
+            <div class="content">
+              <h4>Например, "fire-and-forget"</h4>
+              <ul>
+                <li>Часто с другой стороной надо "подговорить" при отключении</li>
+                <li class="fragment">И для этого надо дождаться выполнения всего отложенного</li>
+              </ul>
+            </div>
+            <div class="footer">
+              footer
+            </div>
+          </section>
+
+          <section>
+            <div class="content">
+              <h4>Например, timeout и cancellation</h4>
+              <pre class="fragment"><code>
+    task = asyncio.create_task(g())
+    await asyncio.sleep(5)
+    task.cancel()
+    with suppress(asyncio.CancelledError):
+        await task
+              <code></pre>
+            </div>
+            <div class="footer">
+              footer
+            </div>
+          </section>
+
+          <section>
+            <div class="content">
+              <h4>Например, race condition</h4>
+              <pre><code>
+                # образец race
+              <code></pre>
+            </div>
+            <div class="footer">
+              footer
+            </div>
+          </section>
+
         </section>
 			</div>
 		</div>
