@@ -28,7 +28,13 @@
 				<section>
           <div class="content">
             <h4>Обо мне</h4>
-            <div>Обо мне</div>
+	    <ul>
+	      <li>20+ лет стажа</li>
+	      <li>10+ лет с первого принятого патча в Python</li>
+	      <li>7+ лет Python Core Developer</li>
+	      <li>В asyncio с самого начала</li>
+	      <li>главный на aiohttp и др. FOSS</li>
+	    </ul>
           </div>
           <div class="footer">
             footer
@@ -155,11 +161,11 @@
             <div class="content">
               <h4>Например, timeout и cancellation</h4>
               <pre class="fragment"><code>
-    task = asyncio.create_task(g())
-    await asyncio.sleep(5)
-    task.cancel()
-    with suppress(asyncio.CancelledError):
-        await task
+task = asyncio.create_task(g())
+await asyncio.sleep(5)
+task.cancel()
+with suppress(asyncio.CancelledError):
+    await task
               <code></pre>
             </div>
             <div class="footer">
